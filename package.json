@@ -37,6 +37,12 @@
   "main": "./template/publish.js",
   "dependencies": {
     "moment": "^2.14.1",
-    "sanitize-html": "^1.13.0"
-  }
+    "sanitize-html": "^1.13.0",
+    "snyk": "^1.332.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
